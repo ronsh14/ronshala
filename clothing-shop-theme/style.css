@@ -44,3 +44,81 @@ footer.site-footer { background:#f6f6f6; padding:1em; text-align:center; margin-
 
 /* Responsive */
 @media(max-width:600px){ .hero{ padding:2em 1em } .product-card img{ height:160px } }
+
+
+/* Navigation Bar */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav a {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #c2185b;
+}
+
+/* Responsive Nav */
+@media(max-width: 600px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+
+/* Page Styling */
+.container h2 {
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 1em;
+}
+
+.container p {
+  text-align: center;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0.5em auto;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 2em auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form button {
+  background-color: #c2185b;
+  color: #fff;
+  padding: 0.8em 1.4em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #a5124a;
+}
